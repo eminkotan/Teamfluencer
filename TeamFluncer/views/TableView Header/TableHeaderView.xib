@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableHeaderView" customModule="TeamFluencer" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="F0d-f6-UY1" id="8Ma-h1-U7b"/>
+                <outlet property="shortInfoLabel" destination="h4S-f6-s4l" id="4Cl-tR-4Ba"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="M98-wa-hcE" customClass="DesignableView" customModule="TeamFluencer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="436"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-f6-UY1">
+                    <rect key="frame" x="0.0" y="-20" width="375" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="MdG-xP-YP9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-f6-s4l">
+                    <rect key="frame" x="20" y="300" width="335" height="44.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="h4S-f6-s4l" secondAttribute="trailing" constant="20" id="903-dQ-4aN"/>
+                <constraint firstItem="fbG-YD-Tvr" firstAttribute="trailing" secondItem="F0d-f6-UY1" secondAttribute="trailing" id="Ut3-Rd-7Lp"/>
+                <constraint firstItem="F0d-f6-UY1" firstAttribute="leading" secondItem="fbG-YD-Tvr" secondAttribute="leading" id="UyW-VA-ERD"/>
+                <constraint firstItem="F0d-f6-UY1" firstAttribute="top" secondItem="fbG-YD-Tvr" secondAttribute="top" constant="-20" id="ake-zv-Dcg"/>
+                <constraint firstItem="h4S-f6-s4l" firstAttribute="leading" secondItem="fbG-YD-Tvr" secondAttribute="leading" constant="20" id="ldr-DG-Bqe"/>
+                <constraint firstItem="h4S-f6-s4l" firstAttribute="top" secondItem="F0d-f6-UY1" secondAttribute="bottom" constant="20" id="qff-Ls-W5v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fbG-YD-Tvr"/>
+            <point key="canvasLocation" x="14.0625" y="-15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noimage" width="1380" height="400"/>
+    </resources>
+</document>
